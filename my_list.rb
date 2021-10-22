@@ -10,8 +10,7 @@ class MyList
   end
 
   def each
-    # yield(@list)
-    @list.each { |elem| yield(elem) if block_given? }
+    yield(@list)
   end
 end
 
